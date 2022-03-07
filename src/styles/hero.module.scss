@@ -1,0 +1,102 @@
+@import "./global.scss";
+
+.Hero {
+  display: flex;
+  height: 100vh;
+
+  .left {
+    width: 50%;
+    @include md {
+      width: 100%;
+      margin-right: 30px;
+    }
+    .tagline {
+      margin-top: 100px;
+      @include md {
+        display: flex;
+      }
+      h1 {
+        margin-left: 60px;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        font-size: 35px;
+        @include md {
+          font-size: 25px;
+        }
+      }
+    }
+    .desc {
+      margin-left: 60px;
+      margin-top: 10px;
+      p {
+        font-size: 20px;
+        @include md {
+          font-size: 15px;
+        }
+      }
+    }
+    .btnContainer {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        font-size: 20px;
+        width: 50%;
+        padding: 10px 15px;
+        background-color: $orange;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 10px;
+        margin-left: 60px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include md {
+          font-size: 15px;
+        }
+
+        svg {
+          margin-left: 5px;
+        }
+      }
+      .outlined {
+        background-color: transparent;
+        color: $orange;
+        border: 1px solid $orange;
+      }
+    }
+    .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 40px;
+      margin-left: 60px;
+      .icon {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 14px;
+        color: $orange;
+        font-family: inherit;
+        margin-bottom: 8px;
+        svg {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    @include md {
+      display: none;
+    }
+  }
+}

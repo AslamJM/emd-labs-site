@@ -1,0 +1,50 @@
+@import "../global.scss";
+
+.card {
+  background-color: $ash;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
+  .cardIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .cardText {
+    padding: 5px 10px;
+    background-color: #404040;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid $orange;
+    h5 {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px;
+      margin: 10px 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    div {
+      font-weight: 200;
+      font-size: 14px;
+      word-wrap: normal;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      color: #f1f1f1;
+    }
+    .link {
+      margin-top: 3px;
+      text-decoration: underline;
+      color: $orange;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}

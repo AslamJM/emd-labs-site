@@ -1,0 +1,40 @@
+@import "../global.scss";
+
+form {
+  width: 100%;
+  .formControl {
+    margin-bottom: 10px;
+    label {
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid $orange;
+      outline: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 100%;
+      border: 1px solid $orange;
+      outline: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  }
+  button {
+    width: 100%;
+    background: $orange;
+    border: none;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 4px #fff;
+  }
+}

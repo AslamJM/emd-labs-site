@@ -1,0 +1,10 @@
+@import "../global.scss";
+
+.footer {
+  width: 100%;
+  background: $ash;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../global.scss";
+
+.about {
+  margin-top: 60px;
+  min-height: 100vh;
+  .header {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+  }
+  .content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .left {
+        width: 50%;
+        padding: 10px;
+        p {
+          font-weight: 200;
+          font-size: 16px;
+        }
+      }
+      .right {
+        width: 50%;
+        padding: 10px;
+        .imgContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "./global.scss";
+
+.nav {
+  height: 70px;
+  background-color: $ash;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 0 0 30px 30px;
+  margin: 0 30px;
+  .logo {
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  .navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .navLinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      text-transform: uppercase;
+      li {
+        padding: 5px 10px;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        letter-spacing: 1px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            color: $orange;
+          }
+        }
+        svg {
+          margin-left: 5px;
+        }
+        &:hover {
+          .dropdown {
+            display: block;
+          }
+        }
+        .dropdown {
+          background-color: #404040;
+          width: 250px;
+          display: none;
+          position: absolute;
+          z-index: 2;
+          top: 70px;
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 0 2px black;
+          text-transform: capitalize;
+          text-align: left;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .btn {
+    button {
+      border: none;
+      text-decoration: none;
+      margin-right: 30px;
+      padding: 5px 10px;
+      background-color: $orange;
+      text-transform: capitalize;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

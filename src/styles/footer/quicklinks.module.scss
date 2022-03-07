@@ -1,0 +1,22 @@
+@import "../global.scss";
+.links {
+  padding: 10px;
+  p {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  ul {
+    li {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+      &:hover {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
+}

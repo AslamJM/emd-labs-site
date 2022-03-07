@@ -1,0 +1,12 @@
+@import "./global.scss";
+.dropdownlist {
+  .dropdownItem {
+    text-transform: capitalize;
+    text-align: left;
+    margin: 5px 0;
+
+    &:hover {
+      background-color: $ash;
+    }
+  }
+}

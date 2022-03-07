@@ -1,0 +1,37 @@
+@import "../global.scss";
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-shadow: 1px 0 1px $orange;
+    h3 {
+      .icon {
+        color: $orange;
+      }
+    }
+  }
+  .gridwrapper {
+    max-width: 1200px;
+    margin: 30px 60px;
+
+    .grid {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      @include md {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
