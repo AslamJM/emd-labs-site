@@ -6,6 +6,7 @@ import {BsFillCaretDownFill} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import {BiMenu} from 'react-icons/bi'
 import {GrClose} from 'react-icons/gr'
+import { navigate } from 'gatsby'
 
 const services=[{name:"software services",slug:"software"},{name:"mechanical services",slug:"mechanical"},{name:"electronics services",slug:"electronics"},{name:"business services",slug:"business"}]
 
@@ -20,6 +21,21 @@ const liVar = {
     },
     
 }
+const buttonVar = {
+    hover:{
+        scale:1.1,
+        transition:{
+            type:"string",
+            stiffness:300,
+            yoyo:Infinity
+        }
+    }
+}
+
+const activeStyle={
+    color:"#f27521",
+    fontWeight:700
+}
 
 const Navbar = () => {
   return (
@@ -31,29 +47,29 @@ const Navbar = () => {
             <ul className={styles.navLinks}>
                 <GrClose className={styles.close}/>
                 <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/'>home</Link></motion.p>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/' activeStyle={activeStyle}>home</Link></motion.p>
                 </li>
-                <li variants={liVar} ><Link to='/services'>services <BsFillCaretDownFill/></Link>
+                <li variants={liVar} ><Link to='/services' activeStyle={activeStyle}>services <BsFillCaretDownFill/></Link>
                 <div className={styles.dropdown}>
                     <DropDownMenu items={services}/>
                 </div>
                 </li>
                 <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/about'>about</Link></motion.p>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/about' activeStyle={activeStyle}>about</Link></motion.p>
                 </li>
                 <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/products'>products</Link></motion.p>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/products' activeStyle={activeStyle}>products</Link></motion.p>
                 </li>
                 <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/initiatives'>initiatives</Link></motion.p>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/initiatives' activeStyle={activeStyle}>initiatives</Link></motion.p>
                 </li>
                 <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/contact'>contact</Link></motion.p>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/contact' activeStyle={activeStyle}>contact</Link></motion.p>
                 </li>
             </ul>
         </div>
         <div className={styles.btn}>
-            <button>get a quote</button>
+            <motion.button whileHover={buttonVar} onClick={()=>navigate('/contact')}>get a quote</motion.button>
         </div>
         <BiMenu className={styles.ham}/>
     </div>

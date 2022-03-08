@@ -24,7 +24,7 @@ const Card = ({title,img,content,slug}) => {
         <div className={styles.cardImage}></div>
         <div className={styles.cardContent}>{content}</div>
         <motion.div className={styles.link } variants={linkVar} whileHover="anim" >
-          <Link to={`/services/${slug}`}>Learn More</Link>
+          <Link to={`/services/${slug}`}>Learn More...</Link>
         </motion.div>
     </div>
   )

@@ -1,4 +1,24 @@
 @import "./global.scss";
 .initiatives {
   min-height: 100vh;
+  .header {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+      max-width: 1000px;
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+    }
+  }
 }

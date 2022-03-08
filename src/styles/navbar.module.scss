@@ -104,6 +104,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       @include md {
         display: none;
       }

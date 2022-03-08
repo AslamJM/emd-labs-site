@@ -20,6 +20,12 @@
     margin-left: 30px;
     height: 100vh;
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     h3 {
       text-align: center;
       text-transform: capitalize;

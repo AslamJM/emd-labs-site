@@ -15,6 +15,11 @@
       margin-bottom: 10px;
       font-size: 16px;
       margin-left: 15px;
+      a {
+        &:hover {
+          color: $orange;
+        }
+      }
     }
   }
 }

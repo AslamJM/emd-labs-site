@@ -3,8 +3,9 @@
 .card {
   margin: 10px;
   padding: 10px;
-  background-color: $ash;
+  background-color: #202020;
   width: 400px;
+  border-radius: 5px;
   .cardHeader {
     text-align: center;
     text-transform: capitalize;
