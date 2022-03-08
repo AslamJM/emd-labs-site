@@ -1,0 +1,27 @@
+@import "../global.scss";
+
+.team {
+  display: flex;
+  background-color: #202020;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $ash;
+  border-radius: 5px;
+
+  .avatar {
+    height: 30px;
+    width: 30px;
+  }
+  .details {
+    flex-grow: 1;
+    h5 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}

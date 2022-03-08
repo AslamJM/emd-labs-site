@@ -6,6 +6,7 @@ import {FiMail} from 'react-icons/fi'
 import { navigate,useStaticQuery,graphql } from 'gatsby'
 import {Software,Mechanical,Electron,Business} from './svg'
 import Typewriter from 'typewriter-effect';
+import Allice from './Allice'
 
 const btnVariant={
     trans:{
@@ -104,7 +105,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.right}></div>
+        <div className={styles.right}><Allice/></div>
     </div>
   )
 }
