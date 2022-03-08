@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import * as styles from '../styles/navbar.module.scss'
 import { Link } from 'gatsby'
 import DropDownMenu from '../components/DropDownMenu'
@@ -38,14 +38,16 @@ const activeStyle={
 }
 
 const Navbar = () => {
-  return (
-    <div className={styles.nav}>
+
+    const[showMenu,setShowMenu]=useState(true)
+
+  return (    <div className={styles.nav}>
         <div className={styles.logo}>
             <h3>EMD Labs</h3>
         </div>
-        <div className={styles.navMenu}>
+        <div className={showMenu?styles.navMenu:styles.hidemenu}>
             <ul className={styles.navLinks}>
-                <GrClose className={styles.close}/>
+                <GrClose className={styles.close} onClick={()=>setShowMenu(!showMenu)}/>
                 <li>
                 <motion.p variants={liVar} whileHover="hover" ><Link to='/' activeStyle={activeStyle}>home</Link></motion.p>
                 </li>
@@ -71,7 +73,7 @@ const Navbar = () => {
         <div className={styles.btn}>
             <motion.button whileHover={buttonVar} onClick={()=>navigate('/contact')}>get a quote</motion.button>
         </div>
-        <BiMenu className={styles.ham}/>
+        <BiMenu className={styles.ham} onClick={()=>setShowMenu(!showMenu)}/>
     </div>
   )
 }

@@ -18,17 +18,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include md {
+        flex-direction: column-reverse;
+      }
       .left {
         width: 50%;
         padding: 10px;
+        @include md {
+          width: 100%;
+        }
         p {
           font-weight: 200;
           font-size: 16px;
+          @include md {
+            font-size: 13px;
+          }
         }
       }
       .right {
         width: 50%;
         padding: 10px;
+        @include md {
+          width: 100%;
+        }
         .imgContainer {
           display: flex;
           align-items: center;
@@ -50,11 +62,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       ul {
         max-width: 1200px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         li {
           padding: 10px 20px;
           font-size: 18px;
@@ -66,6 +80,9 @@
           justify-content: center;
           border: 1px solid $ash;
           border-radius: 10px;
+          @include md {
+            margin: 10px;
+          }
           .icon {
             font-size: 30px;
             color: $orange;
@@ -93,6 +110,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
+      @include md {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 }

@@ -57,6 +57,7 @@
         justify-content: center;
         @include md {
           font-size: 15px;
+          width: 35%;
         }
 
         svg {

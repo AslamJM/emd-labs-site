@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    position: relative;
     .navLinks {
       display: flex;
       align-items: center;
@@ -27,14 +28,24 @@
       height: 100%;
       text-transform: uppercase;
       @include md {
-        height: 400px;
-        width: 400px;
-        display: block;
+        height: 200px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
         background-color: #202020;
         z-index: 3;
+        position: absolute;
+        top: 25px;
+        padding: 10px 0;
       }
       .close {
         font-size: 25px;
+        color: #fff;
+        background-color: #404040;
+        cursor: pointer;
+        position: absolute;
+        right: 2px;
+        top: 2px;
         display: none;
         @include md {
           display: block;
@@ -52,7 +63,9 @@
         transition: all 0.3s ease;
         letter-spacing: 1px;
         @include md {
-          display: inline-block;
+          display: block;
+          z-index: 4;
+          height: 25px;
         }
 
         a {
@@ -65,10 +78,16 @@
         }
         svg {
           margin-left: 5px;
+          @include md {
+            display: none;
+          }
         }
         &:hover {
           .dropdown {
             display: block;
+            @include md {
+              display: none;
+            }
           }
         }
         .dropdown {
@@ -119,6 +138,15 @@
     display: none;
     @include md {
       display: block;
+    }
+  }
+}
+
+.hidemenu {
+  @include md {
+    transform: translateY(-400px);
+    li {
+      display: none;
     }
   }
 }

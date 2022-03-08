@@ -32,6 +32,9 @@
       @include md {
         grid-template-columns: 1fr 1fr;
       }
+      @include sd {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

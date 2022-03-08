@@ -6,6 +6,9 @@
   background-color: #202020;
   width: 400px;
   border-radius: 5px;
+  @include md {
+    width: 250px;
+  }
   .cardHeader {
     text-align: center;
     text-transform: capitalize;

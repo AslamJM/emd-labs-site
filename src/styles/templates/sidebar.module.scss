@@ -7,6 +7,9 @@
   background-color: #202020;
   padding: 10px;
   border-radius: 5px;
+  @include md {
+    display: none;
+  }
 
   ul {
     margin-top: 40px;
