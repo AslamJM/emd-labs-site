@@ -8,6 +8,7 @@ import { GiBrainDump, GiImpactPoint } from "react-icons/gi"
 import { MdHighQuality } from "react-icons/md"
 import { SiHandshake } from "react-icons/si"
 import Team from "../components/about/Team"
+import Head from "../components/Head"
 
 const About = ({ data }) => {
   const team = [
@@ -28,6 +29,7 @@ const About = ({ data }) => {
   const image = data.file.childImageSharp.gatsbyImageData
   return (
     <Layout>
+      <Head title="About" />
       <div className={styles.about}>
         <div className={styles.header}>
           <h2>who are we?</h2>

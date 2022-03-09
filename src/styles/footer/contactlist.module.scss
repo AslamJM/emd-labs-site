@@ -2,6 +2,10 @@
 
 .contactList {
   margin: 10px;
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .contactListItem {
     display: flex;
     align-items: center;
@@ -11,9 +15,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 30px;
-      height: 30px;
-      color: $orange;
+      width: 40px;
+      height: 40px;
+      background-color: #404040;
+      color: #fff;
       font-size: 20px;
       margin-right: 5px;
     }

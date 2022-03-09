@@ -3,11 +3,13 @@ import * as styles from "../../styles/products/main.module.scss"
 import Layout from "../../components/Layout"
 import Sidebar from "../../components/templateSidebar"
 import { graphql } from "gatsby"
+import Head from "../../components/Head"
 
 const Products = ({ data }) => {
   const { html, tableOfContents } = data.markdownRemark
   return (
     <Layout>
+      <Head title="Products" />
       <div className={styles.products}>
         <div className={styles.header}>
           <h2>our products</h2>

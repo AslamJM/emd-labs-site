@@ -6,8 +6,16 @@
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 10px;
+    @include md {
+      text-align: center;
+    }
   }
   ul {
+    @include md {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     li {
       font-size: 14px;
       font-weight: 300;

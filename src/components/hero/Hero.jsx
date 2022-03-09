@@ -36,6 +36,16 @@ const btnVariant={
 
 const Hero = () => {
     const abQuery = useStaticQuery(graphql`{
+  allFile(
+    filter: {relativeDirectory: {eq: "images/hero"}}
+    sort: {fields: sourceInstanceName}
+  ) {
+    nodes {
+      childrenImageSharp {
+        gatsbyImageData(layout: FIXED, width: 500)
+      }
+    }
+  }
   markdownRemark(frontmatter: {name: {eq: "about"}}) {
     frontmatter {
       description
@@ -43,8 +53,8 @@ const Hero = () => {
   }
 }
 
-
 `)
+const images = abQuery.allFile.nodes
   return (
     <div className={styles.Hero}>
         <div className={styles.left}>
@@ -105,7 +115,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.right}><Allice/></div>
+        <div className={styles.right}><Allice images={images}/></div>
     </div>
   )
 }

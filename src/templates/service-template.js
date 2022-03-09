@@ -3,12 +3,14 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Sidebar from "../components/templateSidebar"
 import * as styles from "../styles/templates/service.module.scss"
+import Head from "../components/Head"
 
 const ServiceTemp = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
+      <Head title={title} />
       <h3 className={styles.header}>{title}</h3>
       <div className={styles.main}>
         <Sidebar menu={data.markdownRemark.tableOfContents} />

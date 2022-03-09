@@ -9,17 +9,17 @@ list: UI/UX Design,Application Development,Application Development,AI Integratio
 ### UI/UX Design
 
 ![ui/uxdesign](software/uiux1.png)
-We focus on having a deep understanding of users, what they need, what they value, their abilities, and also their limitations in a product, system, or service.
+We focus on having a deep understanding of users, what they need, what they value, their abilities, and also their limitations in a product, system, or service. A software product or a website/web application should be pleasant to look at and users must be comfortable and easily guided by the user interface. Our team at EMD Labs has a good eye on modern UI/UX trends and will provide our customers these services according to their needs.
 
 ### Application Development
 
 ![aplicationdevelopment](software/appdev.png)
-We create programs to perform the different tasks that a business requires to automate the processes and increase efficiency by gathering requirements, designing prototypes, testing, implementation, and integration.
+We build applications and programs to solve your problems and to increase your productivity. We focus on full-stack web applications as the today's trend of moving everything to the cloud. Having your stock management system or HR managemet systems online will protect you from data losses. We focus on these aspects mainly.
 
 ### Cloud Services
 
 ![cloud](software/cloud.png)
-Cloud services are infrastructure, platforms, or software that are hosted by third-party providers and made available to users through the internet. … Users can access cloud services with nothing more than a computer, operating system, and internet connectivity or virtual private network
+Cloud services are infrastructure, platforms, or software that are hosted by third-party providers and made available to users through the internet. … Users can access cloud services with nothing more than a computer, operating system, and internet connectivity or virtual private network.
 
 ### AI Integration
 
@@ -29,4 +29,4 @@ The core idea of Artificial Intelligence systems integration is making individua
 ### Third Party Applications Integration
 
 ![thirdparty-app-dev](software/thirdparty.png)
-Third party applications are programs written to work within operating systems, but are written by individuals or companies other than the provider of the operating system. … Any program authored by a different company or an individual is a third party application
+Third party applications are programs written to work within operating systems, but are written by individuals or companies other than the provider of the operating system. … Any program authored by a different company or an individual is a third party application.

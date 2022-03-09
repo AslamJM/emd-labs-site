@@ -5,6 +5,9 @@
   .socialIcons {
     p {
       margin-bottom: 10px;
+      @include md {
+        text-align: center;
+      }
     }
     .socialIconsContainer {
       display: flex;
