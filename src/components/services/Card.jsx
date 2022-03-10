@@ -21,7 +21,6 @@ const Card = ({title,img,content,slug}) => {
         <div className={styles.cardHeader}>
             <h3>{title}</h3>
         </div>
-        <div className={styles.cardImage}></div>
         <div className={styles.cardContent}>{content}</div>
         <motion.div className={styles.link } variants={linkVar} whileHover="anim" >
           <Link to={`/services/${slug}`}>Learn More...</Link>

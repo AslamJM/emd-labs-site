@@ -45,8 +45,8 @@ const Navbar = () => {
         <div className={styles.logo}>
             <h3>EMD Labs</h3>
         </div>
-        <div className={showMenu?styles.navMenu:styles.hidemenu}>
-            <ul className={styles.navLinks}>
+        <div className={styles.navMenu}>
+            <ul className={showMenu?styles.navLinks:styles.hidemenu}>
                 <GrClose className={styles.close} onClick={()=>setShowMenu(!showMenu)}/>
                 <li>
                 <motion.p variants={liVar} whileHover="hover" ><Link to='/' activeStyle={activeStyle}>home</Link></motion.p>

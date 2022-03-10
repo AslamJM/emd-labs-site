@@ -84,7 +84,7 @@ const images = abQuery.allFile.nodes
                 <div>
                     <Typewriter
              options={{
-                strings: ['PCB Design','IoT Application',,'AI Integration'],
+                strings: ['PCB Design','IoT Application','AI Integration'],
                 autoStart: true,
                 loop: true,
             }}

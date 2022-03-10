@@ -18,7 +18,7 @@ const Contact = () => {
           <div className={styles.wrapper}>
             <div className={styles.left}>
               <div className={styles.contentleft}>
-                <h3>Let's discuss what you are expecting?</h3>
+                <h3>Let's discuss what you are expecting.</h3>
                 <Link to="/services" className={styles.link}>
                   check out our services
                 </Link>

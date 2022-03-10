@@ -145,8 +145,11 @@
 .hidemenu {
   @include md {
     transform: translateY(-400px);
-    li {
-      display: none;
-    }
+  }
+}
+
+.showmenu {
+  @include md {
+    transform: translateY(70px);
   }
 }

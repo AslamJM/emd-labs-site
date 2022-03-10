@@ -14,8 +14,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "emailjs": "^3.7.0",
     "formik": "^2.2.9",
     "framer-motion": "^6.2.8",
     "gatsby": "^4.8.0",
