@@ -2,11 +2,13 @@
 
 .nav {
   height: 70px;
-  background-color: $ash;
+  background-color: #202020;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #fff;
+  border: 1px solid $ash;
+  border-top: none;
   border-radius: 0 0 30px 30px;
   margin: 0 30px;
   position: relative;

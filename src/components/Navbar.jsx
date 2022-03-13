@@ -6,7 +6,8 @@ import {BsFillCaretDownFill} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import {BiMenu} from 'react-icons/bi'
 import {GrClose} from 'react-icons/gr'
-import { navigate } from 'gatsby'
+import { navigate,useStaticQuery,graphql} from 'gatsby'
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const services=[{name:"software services",slug:"software"},{name:"mechanical services",slug:"mechanical"},{name:"electronics services",slug:"electronics"},{name:"business services",slug:"business"}]
 
@@ -41,9 +42,19 @@ const Navbar = () => {
 
     const[showMenu,setShowMenu]=useState(true)
 
+    const logoImg=useStaticQuery(graphql`{
+file(relativePath: {eq: "images/logo1.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FIXED, width: 150)
+    }
+  }
+}`)
+
   return (    <div className={styles.nav}>
         <div className={styles.logo}>
-            <h3>EMD Labs</h3>
+            <Link to='/'>
+             <GatsbyImage image={logoImg.file.childImageSharp.gatsbyImageData}/>
+            </Link>
         </div>
         <div className={styles.navMenu}>
             <ul className={showMenu?styles.navLinks:styles.hidemenu}>
@@ -51,14 +62,15 @@ const Navbar = () => {
                 <li>
                 <motion.p variants={liVar} whileHover="hover" ><Link to='/' activeStyle={activeStyle}>home</Link></motion.p>
                 </li>
+                <li>
+                <motion.p variants={liVar} whileHover="hover" ><Link to='/about' activeStyle={activeStyle}>about</Link></motion.p>
+                </li>
                 <li variants={liVar} ><Link to='/services' activeStyle={activeStyle}>services <BsFillCaretDownFill/></Link>
                 <div className={styles.dropdown}>
                     <DropDownMenu items={services}/>
                 </div>
                 </li>
-                <li>
-                <motion.p variants={liVar} whileHover="hover" ><Link to='/about' activeStyle={activeStyle}>about</Link></motion.p>
-                </li>
+                
                 <li>
                 <motion.p variants={liVar} whileHover="hover" ><Link to='/products' activeStyle={activeStyle}>products</Link></motion.p>
                 </li>
