@@ -101,7 +101,7 @@ export const query = graphql`
     }
     file(relativePath: { eq: "images/about.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: FIXED, width: 500)
+        gatsbyImageData
       }
     }
   }

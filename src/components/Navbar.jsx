@@ -45,7 +45,7 @@ const Navbar = () => {
     const logoImg=useStaticQuery(graphql`{
 file(relativePath: {eq: "images/logo1.png"}) {
     childImageSharp {
-      gatsbyImageData(layout: FIXED, width: 150)
+      gatsbyImageData(width: 120, breakpoints: 5)
     }
   }
 }`)
@@ -57,7 +57,7 @@ file(relativePath: {eq: "images/logo1.png"}) {
             </Link>
         </div>
         <div className={styles.navMenu}>
-            <ul className={showMenu?styles.navLinks:styles.hidemenu}>
+            <ul className={showMenu?styles.showmenu:styles.hidemenu}>
                 <GrClose className={styles.close} onClick={()=>setShowMenu(!showMenu)}/>
                 <li>
                 <motion.p variants={liVar} whileHover="hover" ><Link to='/' activeStyle={activeStyle}>home</Link></motion.p>

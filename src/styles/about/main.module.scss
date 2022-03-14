@@ -69,6 +69,10 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include md {
+          align-items: start;
+          justify-content: start;
+        }
         li {
           padding: 10px 20px;
           font-size: 18px;
@@ -82,11 +86,16 @@
           border-radius: 10px;
           @include md {
             margin: 10px;
+            padding: 10px;
+            font-size: 14px;
           }
           .icon {
             font-size: 30px;
             color: $orange;
             margin-right: 5px;
+            @include md {
+              font-size: 25px;
+            }
           }
         }
       }
