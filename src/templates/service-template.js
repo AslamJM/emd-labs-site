@@ -6,11 +6,11 @@ import * as styles from "../styles/templates/service.module.scss"
 import Head from "../components/Head"
 
 const ServiceTemp = ({ data }) => {
-  const { title } = data.markdownRemark.frontmatter
+  const { title, list } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
-      <Head title={title} />
+      <Head title={title} description={list} />
       <h3 className={styles.header}>{title}</h3>
       <div className={styles.main}>
         <Sidebar menu={data.markdownRemark.tableOfContents} />
@@ -31,6 +31,7 @@ export const query = graphql`
       tableOfContents
       frontmatter {
         title
+        list
       }
     }
   }

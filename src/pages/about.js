@@ -29,7 +29,10 @@ const About = ({ data }) => {
   const image = data.file.childImageSharp.gatsbyImageData
   return (
     <Layout>
-      <Head title="About" />
+      <Head
+        title="About"
+        description={data.markdownRemark.frontmatter.landing}
+      />
       <div className={styles.about}>
         <div className={styles.header}>
           <h2>who are we?</h2>
@@ -91,6 +94,9 @@ export default About
 export const query = graphql`
   {
     markdownRemark(frontmatter: { name: { eq: "about" } }) {
+      frontmatter {
+        landing
+      }
       html
     }
     file(relativePath: { eq: "images/about.png" }) {

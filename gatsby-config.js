@@ -5,7 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    url: "https://emd-labs.com",
+    title: "EMD Labs",
+    description:
+      "EMD Labs is a service-driven mechanical, electronics software and business development company. We create comprehensive research and development through developing technology and innovation that can resolve any software, mechanical, electronics and business-related challenge from Batticaloa, Sri Lanka, to the world",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

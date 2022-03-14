@@ -9,7 +9,10 @@ const Services = ({ data }) => {
   const items = data.allMarkdownRemark.nodes
   return (
     <Layout>
-      <Head title="Services" />
+      <Head
+        title="Services"
+        description="We provide UI/UX designing, Application (App) development, Data Science, Artificial intelligence(AI), System design, 3D modelling and designing, PCB designing and printing, Internet of things (IoT) related services, along with assistance from incubation to marketing."
+      />
       <div className={styles.services}>
         <div className={styles.header}>
           <h2>our services</h2>
