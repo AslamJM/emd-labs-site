@@ -13,7 +13,7 @@ const HeroCarosoul = () => {
 
 export default HeroCarosoul
 
-export  const Textgen = ({text,title,image})=>{
+export  const Textgen = ({text,title})=>{
     return<div>
         <h3>{title}</h3>
         <p>{text}</p>
