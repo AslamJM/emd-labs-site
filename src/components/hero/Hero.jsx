@@ -7,6 +7,7 @@ import { navigate,useStaticQuery,graphql } from 'gatsby'
 import {Software,Mechanical,Electron,Business} from './svg'
 import Typewriter from 'typewriter-effect';
 import Allice from './Allice'
+import HeroCarosoul from './HeroCarosoul'
 
 const btnVariant={
     trans:{
@@ -63,7 +64,7 @@ const images = abQuery.allFile.nodes
                 <motion.h1 initial={{x:"-200%",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:3,ease:"easeIn",type:"spring",stiffness:100}}>Innovative Solutions</motion.h1>
             </div>
             <div className={styles.desc}>
-                <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1.5,ease:"easeIn"}}>{abQuery.markdownRemark.frontmatter.description} </motion.p>
+                <HeroCarosoul/>
             </div>
             <div className={styles.btnContainer}>
                 <motion.button variants={btnVariant} transition="trans" whileHover="hover" initial="init" animate="anim" onClick={()=>navigate('/services')}>OUR SERVICES <FaExternalLinkAlt/></motion.button>
