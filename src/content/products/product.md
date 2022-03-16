@@ -7,7 +7,7 @@ name: product
 ### Documents management system
 
 ### Bikes for Autistic Kids
-
+"We refuse to charge high costs since the cycles are special," the firm states. "We are committed to making our products accessible." The Autistic bikes allow rear-seat caregivers to steer and brake control on a hand-propelled recumbent tricycle for young bikers with mobility difficulties in their legs. Tricycles for children and teenagers with balance concerns are also available from us.
 ### Plastic Upcycling Machines
 We construct machinery for upcycling operations such as shredding, injection, extrusion, sheet press, and compression to make upcycled items. It is a social innovation concept that originated in the Open Source community. We design and manufacture our own machinery for the upcycling process.
 
