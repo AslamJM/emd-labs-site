@@ -70,7 +70,12 @@ const images = abQuery.allFile.nodes
                 <motion.button variants={btnVariant} transition="trans" whileHover="hover" initial="init" animate="anim" onClick={()=>navigate('/services')}>OUR SERVICES <FaExternalLinkAlt/></motion.button>
                 <motion.button className={styles.outlined} variants={btnVariant} transition="trans" whileHover="outlineHover" initial="init" animate="anim" onClick={()=>navigate('/contact')}>CONTACT US <FiMail/></motion.button>
             </div>
-            <div className={styles.iconContainer}>
+
+        </div>
+        <div className={styles.right}>
+          <div className={styles.containerR}>
+            <Allice images={images}/>
+                       <div className={styles.iconContainer}>
                 <div className={styles.icon} ><Software/>
                 <div>
                          <Typewriter
@@ -115,8 +120,8 @@ const images = abQuery.allFile.nodes
                 </div>
                 </div>
             </div>
+          </div>
         </div>
-        <div className={styles.right}><Allice images={images}/></div>
     </div>
   )
 }

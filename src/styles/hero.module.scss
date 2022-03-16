@@ -78,29 +78,6 @@
         border: 1px solid $orange;
       }
     }
-    .iconContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 40px;
-      margin-left: 60px;
-      .icon {
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 5px;
-        font-size: 14px;
-        color: $orange;
-        font-family: inherit;
-        margin-bottom: 8px;
-        svg {
-          height: 40px;
-          width: 40px;
-        }
-      }
-    }
   }
   .right {
     width: 50%;
@@ -108,15 +85,43 @@
     align-items: center;
     justify-content: center;
     padding: 10px 30px;
-    h3 {
-      font-size: 30px;
-      font-weight: 500;
-      margin-bottom: 12px;
+    .containerR {
+      width: 100%;
+      h3 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .iconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-left: 60px;
+        .icon {
+          width: 25%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 5px;
+          font-size: 14px;
+          color: $orange;
+          font-family: inherit;
+          margin-bottom: 8px;
+          svg {
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
     }
-    p {
-      font-size: 20px;
-      font-weight: 300;
-    }
+
     @include md {
       display: none;
     }
