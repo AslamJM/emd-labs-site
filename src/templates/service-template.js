@@ -1,21 +1,24 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Sidebar from "../components/templateSidebar"
 import * as styles from "../styles/templates/service.module.scss"
 import Head from "../components/Head"
+import Block from "../components/Block"
 
 const ServiceTemp = ({ data }) => {
-  const { title, list } = data.markdownRemark.frontmatter
-
+  const blocks = data.allMarkdownRemark.nodes
+  console.log(blocks)
   return (
     <Layout>
-      <Head title={title} description={list} />
-      <h3 className={styles.header}>{title}</h3>
+      <Head title={blocks[0].frontmatter.service + " services"} />
+      <h3 className={styles.header}>
+        {blocks[0].frontmatter.service + " services"}
+      </h3>
       <div className={styles.main}>
-        <Sidebar menu={data.markdownRemark.tableOfContents} />
         <div className={styles.content}>
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          {blocks.map((item, index) => (
+            <Block block={item} key={index} />
+          ))}
         </div>
       </div>
     </Layout>
@@ -25,13 +28,19 @@ const ServiceTemp = ({ data }) => {
 export default ServiceTemp
 
 export const query = graphql`
-  query Service($slug: String) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      tableOfContents
-      frontmatter {
-        title
-        list
+  query ServiceQ($slug: String) {
+    allMarkdownRemark(filter: { frontmatter: { service: { eq: $slug } } }) {
+      nodes {
+        frontmatter {
+          service
+          title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 500)
+            }
+          }
+        }
+        html
       }
     }
   }

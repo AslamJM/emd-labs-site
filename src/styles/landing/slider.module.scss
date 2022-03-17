@@ -1,0 +1,27 @@
+@import "../global.scss";
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .left {
+    width: 50%;
+
+    h2 {
+      text-align-last: left;
+      font-size: 35px;
+      margin-bottom: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      text-align: left;
+    }
+  }
+  .right {
+    width: 50%;
+  }
+}

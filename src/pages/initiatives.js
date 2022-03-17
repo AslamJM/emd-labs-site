@@ -10,7 +10,9 @@ const Initiatives = ({ data }) => {
     <Layout>
       <Head title="Initiatives" />
       <div className={styles.initiatives}>
-        <div className={styles.header}></div>
+        <div className={styles.header}>
+          <h2>our initatives</h2>
+        </div>
         <div className={styles.container}>
           <div className={styles.wrapper}>
             <div dangerouslySetInnerHTML={{ __html: html }} />

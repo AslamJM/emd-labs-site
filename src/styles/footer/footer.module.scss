@@ -3,6 +3,7 @@
 .footer {
   width: 100%;
   background: $ash;
+  color: #fff;
 
   .wrapper {
     display: grid;
@@ -22,6 +23,9 @@
     background-color: #101010;
     a {
       text-decoration: underline;
+      &:hover {
+        color: $orange;
+      }
     }
   }
 }

@@ -1,7 +1,6 @@
 import React from "react"
 import * as styles from "../../styles/products/main.module.scss"
 import Layout from "../../components/Layout"
-import Sidebar from "../../components/templateSidebar"
 import { graphql } from "gatsby"
 import Head from "../../components/Head"
 
@@ -15,7 +14,6 @@ const Products = ({ data }) => {
           <h2>our products</h2>
         </div>
         <div className={styles.main}>
-          <Sidebar menu={tableOfContents} />
           <div className={styles.content}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
