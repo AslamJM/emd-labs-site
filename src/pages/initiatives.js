@@ -3,9 +3,10 @@ import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/initiative.module.scss"
 import Head from "../components/Head"
+import Single from "../components/initiatives/single"
 
 const Initiatives = ({ data }) => {
-  const { html } = data.markdownRemark
+  const inits = data.allMarkdownRemark.nodes
   return (
     <Layout>
       <Head title="Initiatives" />
@@ -15,7 +16,9 @@ const Initiatives = ({ data }) => {
         </div>
         <div className={styles.container}>
           <div className={styles.wrapper}>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            {inits.map((prod, index) => (
+              <Single prod={prod} key={index} />
+            ))}
           </div>
         </div>
       </div>
@@ -27,8 +30,20 @@ export default Initiatives
 
 export const query = graphql`
   {
-    markdownRemark(frontmatter: { name: { eq: "initiatives" } }) {
-      html
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "initiative" } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+        html
+      }
     }
   }
 `

@@ -3,9 +3,11 @@ import * as styles from "../../styles/products/main.module.scss"
 import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import Head from "../../components/Head"
+import Single from "../../components/products/Single"
 
 const Products = ({ data }) => {
-  const { html, tableOfContents } = data.markdownRemark
+  const products = data.allMarkdownRemark.nodes
+
   return (
     <Layout>
       <Head title="Products" />
@@ -15,7 +17,9 @@ const Products = ({ data }) => {
         </div>
         <div className={styles.main}>
           <div className={styles.content}>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            {products.map((prod, index) => (
+              <Single prod={prod} key={index} />
+            ))}
           </div>
         </div>
       </div>
@@ -26,10 +30,16 @@ const Products = ({ data }) => {
 export default Products
 
 export const query = graphql`
-  query MyQuery {
-    markdownRemark(frontmatter: { name: { eq: "product" } }) {
-      html
-      tableOfContents
+  query Product {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "product" } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+        }
+        html
+      }
     }
   }
 `

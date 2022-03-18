@@ -1,0 +1,43 @@
+@import "../global.scss";
+
+.single {
+  margin-bottom: 30px;
+  .header {
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+  .content {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include md {
+        flex-direction: column;
+      }
+      .left {
+        width: 50%;
+        padding: 10px;
+        @include md {
+          width: 100%;
+          margin: 10px;
+        }
+      }
+      .right {
+        width: 50%;
+        padding: 10px;
+        @include md {
+          width: 100%;
+          margin: 10px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
