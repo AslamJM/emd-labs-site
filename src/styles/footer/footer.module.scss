@@ -22,6 +22,9 @@
     margin-top: 10px;
     padding: 10px;
     background-color: #101010;
+    @include md {
+      font-size: 12px;
+    }
     a {
       text-decoration: underline;
       &:hover {

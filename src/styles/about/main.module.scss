@@ -53,10 +53,13 @@
     margin-top: 20px;
     h4 {
       text-align: center;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 500;
       margin-bottom: 10px;
       text-transform: capitalize;
+      @include md {
+        font-size: 18px;
+      }
     }
     .valuelist {
       display: flex;
@@ -104,11 +107,14 @@
   }
   .teamheader {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
     text-transform: capitalize;
     margin-top: 30px;
+    @include md {
+      font-size: 18px;
+    }
   }
   .teams {
     display: flex;

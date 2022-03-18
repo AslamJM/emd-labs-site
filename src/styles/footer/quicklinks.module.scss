@@ -21,6 +21,9 @@
       font-weight: 300;
       margin-bottom: 5px;
       text-transform: capitalize;
+      @include md {
+        font-size: 13px;
+      }
       &:hover {
         color: $orange;
         text-decoration: underline;

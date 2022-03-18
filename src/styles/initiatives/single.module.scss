@@ -8,6 +8,9 @@
       margin-bottom: 10px;
       font-size: 25px;
       font-weight: 400;
+      @include md {
+        font-size: 18px;
+      }
     }
   }
   .content {
@@ -36,6 +39,9 @@
         p {
           font-size: 18px;
           font-weight: 300;
+          @include md {
+            font-size: 15px;
+          }
         }
       }
     }

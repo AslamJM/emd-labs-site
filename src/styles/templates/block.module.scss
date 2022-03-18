@@ -7,6 +7,9 @@
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: 500;
+    @include md {
+      font-size: 18px;
+    }
   }
   .content {
     display: flex;
@@ -26,6 +29,9 @@
       p {
         font-size: 18px;
         font-weight: 300;
+        @include md {
+          font-size: 15px;
+        }
       }
     }
     .right {

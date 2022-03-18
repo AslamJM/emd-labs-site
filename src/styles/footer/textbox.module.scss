@@ -3,5 +3,8 @@
   padding: 10px;
   p {
     font-size: 13px;
+    @include md {
+      font-size: 12px;
+    }
   }
 }

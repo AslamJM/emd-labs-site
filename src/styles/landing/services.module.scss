@@ -22,6 +22,9 @@
   .gridwrapper {
     max-width: 1200px;
     margin: 15px 30px;
+    @include md {
+      margin: 5px 10px;
+    }
 
     .grid {
       display: grid;
