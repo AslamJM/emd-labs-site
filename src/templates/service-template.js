@@ -7,7 +7,6 @@ import Block from "../components/Block"
 
 const ServiceTemp = ({ data }) => {
   const blocks = data.allMarkdownRemark.nodes
-  console.log(blocks)
   return (
     <Layout>
       <Head title={blocks[0].frontmatter.service + " services"} />

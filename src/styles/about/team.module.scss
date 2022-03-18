@@ -19,10 +19,17 @@
     h5 {
       font-size: 15px;
       font-weight: 500;
+      @include md {
+        font-size: 12px;
+        font-weight: 400;
+      }
     }
     p {
       font-size: 14px;
       font-weight: 200;
+      @include md {
+        font-size: 11px;
+      }
     }
   }
 }

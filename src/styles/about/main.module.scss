@@ -86,16 +86,16 @@
           border-radius: 10px;
           color: #fff;
           @include md {
-            margin: 10px;
-            padding: 10px;
-            font-size: 14px;
+            margin: 5px;
+            padding: 5px;
+            font-size: 12px;
           }
           .icon {
             font-size: 30px;
             color: $orange;
             margin-right: 5px;
             @include md {
-              font-size: 25px;
+              font-size: 20px;
             }
           }
         }
@@ -122,6 +122,7 @@
       grid-gap: 10px;
       @include md {
         grid-template-columns: 1fr 1fr;
+        margin: 10px;
       }
     }
   }

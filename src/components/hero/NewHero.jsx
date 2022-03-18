@@ -35,7 +35,7 @@ const items = [<SliderItem title="Industrial revolution 4.0" text="We process au
     <div className={styles.newhero}>
         <div className={styles.container} >
             <div>
-              <Carousel autoPlay dynamicHeight infiniteLoop showArrows={false} showStatus={false} showThumbs={false} width="90%" >
+              <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false} width="100%" >
                 {
                   items.map(item=>item)
                 }
