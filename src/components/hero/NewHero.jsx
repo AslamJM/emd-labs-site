@@ -4,6 +4,7 @@ import * as styles from '../../styles/landing/newHero.module.scss'
 import { Carousel } from 'react-responsive-carousel';
 import SliderItem from './Slider';
 import { useStaticQuery,graphql } from 'gatsby';
+import ParticleJS from '../ParticleJS'
 //import "slick-carousel/slick/slick.css";
 //import "slick-carousel/slick/slick-theme.css";
 //import Slider from "react-slick";
@@ -33,6 +34,7 @@ const items = [<SliderItem title="Industrial revolution 4.0" text="We process au
 
   return (
     <div className={styles.newhero}>
+      <ParticleJS/>
         <div className={styles.container} >
             <div>
               <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false} width="100%" >

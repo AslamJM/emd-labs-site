@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import NewHero from "../components/hero/NewHero"
 import Services from "../components/hero/Services"
 import About from "../components/hero/About"
+//import ParticleHero from "../components/hero/ParticleHero"
 import Head from "../components/Head"
 import { graphql } from "gatsby"
 
