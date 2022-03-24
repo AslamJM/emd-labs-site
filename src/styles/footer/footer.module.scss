@@ -10,7 +10,7 @@
     padding: 10px 60px;
     //align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     @include md {
       grid-template-columns: 1fr;
       padding: 10px;
