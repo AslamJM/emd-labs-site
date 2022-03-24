@@ -1,5 +1,5 @@
 ---
-service: electronics
+service: mechatronic
 featuredImage: iot.png
 title: IoT Based Platform & Application
 ---

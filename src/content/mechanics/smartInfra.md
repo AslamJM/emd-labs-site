@@ -1,5 +1,5 @@
 ---
-service: mechanical
+service: mechatronic
 featuredImage: smartinfra.png
 title: Smart Infrastructure Design
 ---

@@ -1,5 +1,5 @@
 ---
-service: mechanical
+service: mechatronic
 featuredImage: prototyping.png
 title: Prototyping & Manufacturing
 ---

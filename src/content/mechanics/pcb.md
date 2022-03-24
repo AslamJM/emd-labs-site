@@ -1,5 +1,5 @@
 ---
-service: electronics
+service: mechatronic
 featuredImage: pcb.png
 title: Schematic / Multi-Layer PCB Design
 ---

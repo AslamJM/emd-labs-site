@@ -1,5 +1,5 @@
 ---
-service: mechanical
+service: mechatronic
 featuredImage: print3d.png
 title: 3D Modelling & Designing
 ---

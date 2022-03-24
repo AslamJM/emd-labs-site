@@ -1,8 +1,8 @@
 ---
 name: services
-title: mechanical services
-slug: mechanical
-description: We offer mechanical solutions to your activities using modern technologies and with good expertise and design
+title: mechatronic services
+slug: mechatronic
+description: We offer mechatronics solutions to your activities using modern technologies and with good expertise and design
 list: 3D Modelling & Designing,Smart Infrastructure Design,Prototyping & Manufacturing
 ---
 

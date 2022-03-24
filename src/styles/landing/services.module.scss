@@ -31,9 +31,9 @@
       justify-content: center;
       align-content: center;
       gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns:  1fr 1fr 1fr;
       @include md {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
       @include sd {
         grid-template-columns: 1fr;
