@@ -17,8 +17,7 @@
     .wrapper {
       width: 1000px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+
       @include md {
         flex-direction: column-reverse;
       }
@@ -30,7 +29,9 @@
         }
         p {
           font-weight: 200;
-          font-size: 16px;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: justify;
           @include md {
             font-size: 13px;
           }
