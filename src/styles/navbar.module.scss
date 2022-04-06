@@ -8,7 +8,9 @@
   justify-content: space-between;
   color: #fff;
   border-bottom: 1px solid $ash;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 100;
   .logo {
     width: 200px;
@@ -28,6 +30,7 @@
       justify-content: space-between;
       height: 100%;
       text-transform: uppercase;
+      transition: all 0.3s ease;
       @include md {
         height: 200px;
         width: 250px;

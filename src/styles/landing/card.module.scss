@@ -7,6 +7,12 @@
   margin: 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  @include md {
+    width: 60%;
+  }
+  @include sd {
+    width: 100%;
+  }
   .cardIcon {
     display: flex;
     align-items: center;

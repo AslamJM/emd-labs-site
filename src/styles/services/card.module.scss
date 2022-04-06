@@ -17,6 +17,9 @@
     font-weight: 500;
   }
   .cardImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .cardContent {
     font-weight: 300;
