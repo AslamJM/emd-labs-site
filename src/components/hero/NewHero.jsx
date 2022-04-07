@@ -4,7 +4,7 @@ import * as styles from '../../styles/landing/newHero.module.scss'
 import { Carousel } from 'react-responsive-carousel';
 import SliderItem from './Slider';
 import { useStaticQuery, graphql } from 'gatsby';
-//import ParticleJS from '../ParticleJS'
+
 
 const NewHero = () => {
 
