@@ -2,12 +2,13 @@
 
 .nav {
   height: 60px;
-  background-color: #202020;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
-  border-bottom: 1px solid $ash;
+  color: #000;
+  box-shadow: 10px 10px 15px -15px #000;
+
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,7 +37,7 @@
         width: 250px;
         display: flex;
         flex-direction: column;
-        background-color: #202020;
+        background-color: #fff;
         z-index: 3;
         position: absolute;
         top: 25px;
@@ -101,13 +102,13 @@
           }
         }
         .dropdown {
-          background-color: #404040;
+          background-color: #fff;
           width: 250px;
           display: none;
           position: absolute;
           z-index: 2;
           top: 60px;
-          border-radius: 0 0 5px 5px;
+          border-radius: 0 0 2px 2px;
           box-shadow: 0 0 2px black;
           text-transform: capitalize;
           text-align: left;

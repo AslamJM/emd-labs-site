@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/initiative.module.scss"
 import Head from "../components/Head"
-import Single from "../components/initiatives/single"
+import Single from "../components/initiatives/Single"
 
 const Initiatives = ({ data }) => {
   const inits = data.allMarkdownRemark.nodes
