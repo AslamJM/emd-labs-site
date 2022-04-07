@@ -2,8 +2,7 @@ import React from 'react'
 import * as styles from '../styles/templates/block.module.scss'
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Block = ({block}) => {
-
+const Block = ({block}) => {  
   return (
     <div className={styles.block}>
         <h2>{block.frontmatter.title}</h2>
