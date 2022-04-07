@@ -10,18 +10,20 @@
     padding: 10px 60px;
     //align-items: center;
     justify-content: center;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
     @include md {
       grid-template-columns: 1fr;
       padding: 10px;
     }
   }
   .bottomText {
-    text-align: center;
     font-size: 14px;
     margin-top: 10px;
     padding: 10px;
     background-color: #101010;
+    p {
+      text-align: center;
+    }
     @include md {
       font-size: 12px;
     }

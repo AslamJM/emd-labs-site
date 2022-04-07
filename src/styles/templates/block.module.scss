@@ -5,10 +5,10 @@
   h2 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     @include md {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
   .content {
@@ -27,10 +27,11 @@
         margin: 10px;
       }
       p {
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
         @include md {
-          font-size: 15px;
+          font-size: 14px;
         }
       }
     }
