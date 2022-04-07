@@ -2,8 +2,8 @@ const path = require("path")
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { data } = await graphql(`
-    query Services {
-      allMarkdownRemark {
+    query MyQuery {
+      allMarkdownRemark(filter: { frontmatter: { name: { eq: "services" } } }) {
         nodes {
           frontmatter {
             slug
