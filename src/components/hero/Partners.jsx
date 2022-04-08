@@ -6,12 +6,12 @@ const Partners = () => {
     <div className={styles.partners}>
         <div className={styles.container} >
             <div className={styles.title}>
-            <h3>our partners</h3>
+            <h2>our partners</h2>
         </div>
         <div className={styles.images}>
-            images
-        </div>
-        </div>
+            images                         
+        </div>                            
+        </div>                    
     </div>
   )
 }
