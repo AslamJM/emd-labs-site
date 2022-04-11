@@ -1,7 +1,7 @@
 ---
 category: initiative
 title: Trash For Trade
-featuredImage: trash.jpg
+featuredImage: trash.jpeg
 website: https://trashfortrade.com/
 facebook: https://facebook.com
 instagram: https://instagram.com

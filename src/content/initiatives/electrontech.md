@@ -1,7 +1,7 @@
 ---
 category: initiative
 title: Electron-Tech
-featuredImage: electrontech.jpg
+featuredImage: electrontech.jpeg
 website: https://electrontech.lk
 facebook: https://facebook.com
 instagram: https://instagram.com
