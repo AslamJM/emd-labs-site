@@ -13,11 +13,11 @@
   }
   .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row-reverse;
     @include md {
       flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
     }
     .left {
       width: 50%;
