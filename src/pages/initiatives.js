@@ -36,6 +36,11 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
+          website
+          facebook
+          instagram
+          phone
+          email
           featuredImage {
             childImageSharp {
               gatsbyImageData

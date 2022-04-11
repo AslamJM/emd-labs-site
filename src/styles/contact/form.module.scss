@@ -2,11 +2,11 @@
 
 form {
   width: 100%;
-  background-color: #101010;
-  color: #fff;
+  background-color: #e4e4e4;
+  color: #000;
   padding: 15px 20px;
   border-radius: 5px;
-  border: 1px solid #202020;
+  border: 1px solid $orange;
   .formControl {
     margin-bottom: 10px;
     label {
@@ -17,21 +17,21 @@ form {
     input {
       width: 100%;
       padding: 10px;
-      border: 1px solid $ash;
+      border: 1px solid $orange;
       outline: none;
       font-size: 16px;
       border-radius: 5px;
-      background-color: #202020;
-      color: #fff;
+      background-color: #f4f4f4;
+      color: #000;
     }
     textarea {
       width: 100%;
-      border: 1px solid $ash;
+      border: 1px solid $orange;
       outline: none;
       font-size: 16px;
       border-radius: 5px;
-      background-color: #202020;
-      color: #fff;
+      background-color: #f4f4f4;
+      color: #000;
     }
   }
   button {

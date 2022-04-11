@@ -1,0 +1,30 @@
+@import "../global.scss";
+.info {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      padding: 4px 6px;
+      margin: 2px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e4e4e4;
+      border: 1px solid $orange;
+      border-radius: 4px;
+      font-size: 15px;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $orange;
+        }
+      }
+      svg {
+        color: $orange;
+        height: 20px;
+        width: 20px;
+        margin-right: 3px;
+      }
+    }
+  }
+}
