@@ -3,6 +3,7 @@ name: services
 title: business services
 slug: business
 description: We help your business to grow and stabilize with incubation, branding and marketing and other services
+featuredImage: chart.png
 list: Incubation,Branding,Marketing,Business Registration,Mentoring & Support,Consultation
 ---
 
