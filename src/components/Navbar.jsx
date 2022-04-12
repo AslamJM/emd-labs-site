@@ -22,16 +22,6 @@ const liVar = {
     },
 
 }
-const buttonVar = {
-    hover: {
-        scale: 1.1,
-        transition: {
-            type: "string",
-            stiffness: 300,
-            yoyo: Infinity
-        }
-    }
-}
 
 const activeStyle = {
     color: "#f27521",
@@ -83,7 +73,7 @@ file(relativePath: {eq: "images/logo1.png"}) {
             </ul>
         </div>
         <div className={styles.btn}>
-            <motion.button whileHover={buttonVar} onClick={() => navigate('/contact')}>get a quote</motion.button>
+            <button  onClick={() => navigate('/contact')}>get a quote</button>
         </div>
         <BiMenu className={styles.ham} onClick={() => setShowMenu(!showMenu)} />
     </div>

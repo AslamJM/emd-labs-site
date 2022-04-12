@@ -81,15 +81,15 @@
         li {
           padding: 10px 20px;
           font-size: 18px;
-          background-color: #202020;
+          background-color: #e4e4e4;
           margin: 0 20px;
           font-weight: 300;
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid $ash;
+          border: 1px solid $orange;
           border-radius: 10px;
-          color: #fff;
+          color: #000;
           @include md {
             margin: 5px;
             padding: 5px;
