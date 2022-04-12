@@ -10,9 +10,9 @@ const ServiceTemp = ({ data }) => {
   return (
     <Layout>
       <Head title={blocks[0].frontmatter.service + " services"} />
-      <h3 className={styles.header}>
+      <h2 className={styles.header}>
         {blocks[0].frontmatter.service + " services"}
-      </h3>
+      </h2>
       <div className={styles.main}>
         <div className={styles.content}>
           {blocks.map((item, index) => (

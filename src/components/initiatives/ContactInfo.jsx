@@ -7,9 +7,9 @@ const ContactInfo = ({details}) => {
   return (
     <div className={styles.info}>
         <ul className={styles.list}>
-            <li><BsGlobe/><a href={website} target="_blank">{website}</a></li>
-            <li><BsFacebook/><a href={facebook} target="_blank">Facebook</a></li>
-            <li><BsInstagram/><a href={instagram} target="_blank">Instagram</a></li>
+            <li><BsGlobe/><a href={website} target="_blank" rel="noopener norefferer">{website}</a></li>
+            <li><BsFacebook/><a href={facebook} target="_blank" rel="noopener norefferer">Facebook</a></li>
+            <li><BsInstagram/><a href={instagram} target="_blank" rel="noopener norefferer">Instagram</a></li>
             <li><BsWhatsapp/>{phone}</li>
             <li><BsFillEnvelopeFill/>{email}</li>
         </ul>
