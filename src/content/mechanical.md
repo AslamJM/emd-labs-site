@@ -3,6 +3,7 @@ name: services
 title: mechatronic services
 slug: mechatronic
 description: We offer mechatronics solutions to your activities using modern technologies and with good expertise and design
+featuredImage: cog.png
 list: 3D Modelling & Designing,Smart Infrastructure Design,Prototyping & Manufacturing
 ---
 

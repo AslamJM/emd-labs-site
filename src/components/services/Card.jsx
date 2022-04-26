@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import * as styles from '../../styles/services/card.module.scss'
 import { motion } from 'framer-motion'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const linkVar={
   anim:{
@@ -18,6 +19,9 @@ const linkVar={
 const Card = ({title,img,content,slug}) => {
   return (
     <div className={styles.card}>
+      <div className={styles.cardImage}>
+        <GatsbyImage image={img.childImageSharp.gatsbyImageData}/>
+      </div>
         <div className={styles.cardHeader}>
             <h3>{title}</h3>
         </div>

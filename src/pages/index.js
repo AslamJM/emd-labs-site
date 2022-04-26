@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import NewHero from "../components/hero/NewHero"
+//import NewHero from "../components/hero/NewHero"
+import NewFront from "../components/hero/NewFront"
 import Services from "../components/hero/Services"
 import Head from "../components/Head"
 import Partners from "../components/hero/Partners"
@@ -11,7 +12,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <Head title="Home" description={data.site.siteMetadata.description} />
-      <NewHero />
+      <NewFront />
       <Services />
       <Partners />
       <TestimonialCarousel />

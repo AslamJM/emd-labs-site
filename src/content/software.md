@@ -3,6 +3,7 @@ name: services
 title: software services
 slug: software
 description: We offer software related services for you. We give solutions to your web related problems and other applications
+featuredImage: code.png
 list: UI/UX Design,Application Development,Application Development,AI Integration,Third Party Applications Integration
 ---
 

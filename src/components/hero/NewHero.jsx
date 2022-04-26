@@ -31,7 +31,7 @@ const NewHero = () => {
     <div className={styles.newhero}>
       <div className={styles.container} >
         <div>
-          <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false} width="100%" >
+          <Carousel autoPlay infiniteLoop showArrows={false} showStatus={false} showThumbs={false} width="100%" dynamicHeight={false}  >
             {
               items.map(item => item)
             }

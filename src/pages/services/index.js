@@ -26,6 +26,7 @@ const Services = ({ data }) => {
                 title={node.frontmatter.title}
                 slug={node.frontmatter.slug}
                 content={node.frontmatter.description}
+                img={node.frontmatter.featuredImage}
               />
             ))}
           </div>
@@ -48,6 +49,11 @@ export const query = graphql`
           description
           slug
           title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
