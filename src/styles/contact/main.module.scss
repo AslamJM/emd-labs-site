@@ -78,6 +78,8 @@
 .contact_card {
   padding: 5px;
   border: 1px solid $orange;
+  background-color: #e4e4e4;
+  border-radius: 5px;
   @include md {
     margin: 10px 60px;
   }
